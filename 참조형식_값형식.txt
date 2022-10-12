@@ -1,0 +1,23 @@
+*값 형식(Value Type):단순하게 값을 복사해서 전달하는 방식(int, float, bool....) 
+Call By Value, Pass By Value 
+(Java, C#, VB...)
+int x = 5; 
+int y = x; 
+y = 6; 
+stack(임시변수, 지역변수...) 작은 메모리 공간
+------
+x(5)
+y(6)
+------
+
+*참조 형식(Reference Type):클래스를 통해서 생성된 객체를 사용해서 참조전달
+Call By Reference, Pass By Reference 
+stack		heap
+-----		-----
+demo --------------->새로운 객체 
+demoB-------------->
+-----		-----
+(Java, C#...)
+DemoClass demo = new DemoClass();
+DemoClass demoB = demo; 
+
